@@ -1546,6 +1546,24 @@ input, select, textarea {
 
 /* Image */
 
+	@media only screen and (min-width: 980px) {
+	  #clipart {
+	    float: right;
+	  }
+	}
+
+	@media only screen and (min-width: 736px) {
+	  #clipart {
+	    size: 15%;
+	  }
+	}
+
+	@media only screen and (max-width: 980px) {
+	 .pic {
+	    height: 40em !important;
+	  }
+	}
+
 	.image {
 		display: inline-block;
 	}
