@@ -213,13 +213,11 @@
 		$window.on('load', function() {
 
 			$('.gallery').poptrox({
-				caption: function($a) { return $a.next('h3').text(); },
 				overlayColor: '#2c2c2c',
 				overlayOpacity: 0.85,
 				popupCloserText: '',
 				popupLoaderText: '',
 				selector: 'a.image',
-				usePopupCaption: true,
 				usePopupDefaultStyling: false,
 				usePopupEasyClose: false,
 				usePopupNav: true,
