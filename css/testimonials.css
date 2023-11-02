@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #testimonials {
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(0, 0, 0, 0.01);
         padding: var(--sectionPadding);
         position: relative;
         z-index: 1;
@@ -124,6 +124,15 @@
         max-width: 27.75rem;
         color: var(--bodyTextColor);
     }
+
+    #testimonials .cs-review-stars {
+        /* 14px - 16px */
+        font-size: clamp(2.875rem, 3.5vw, 3rem);
+        line-height: 1.5em;
+        margin: 0;
+        max-width: 27.75rem;
+        color: var(--bodyTextColor);
+    }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -156,13 +165,15 @@
     body.dark-mode #testimonials .cs-title,
     body.dark-mode #testimonials .cs-text,
     body.dark-mode #testimonials .cs-review,
+    body.dark-mode #testimonials .cs-review-stars,
     body.dark-mode #testimonials .cs-job,
     body.dark-mode #testimonials .cs-desc {
         color: var(--bodyTextColorWhite);
     }
     body.dark-mode #testimonials .cs-text,
     body.dark-mode #testimonials .cs-desc,
-    body.dark-mode #testimonials .cs-review {
+    body.dark-mode #testimonials .cs-review,
+    body.dark-mode #testimonials .cs-review-stars {
         opacity: 0.8;
     }
     body.dark-mode #testimonials .cs-item:after {

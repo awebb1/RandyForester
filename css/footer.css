@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #footer {
         padding: var(--sectionPadding);
-        background-color: rgba(0, 0, 0, 0.05)
+        background-color: rgba(0, 0, 0, 0.01)
         /* Navigation Links */
     }
     #footer .cs-container {
