@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #footer {
-        padding: var(--sectionPadding);
+        padding: clamp(3.75rem, 7.82vw, 4.25rem) 1rem;
         background-color: rgba(0, 0, 0, 0.01)
         /* Navigation Links */
     }
@@ -113,6 +113,11 @@
     }
     #footer .cs-nav-link:hover:before {
         width: 100%;
+    }
+    #footer .cs-bottom {
+        text-align: right;
+        align-items: right;
+        padding-top: 2em;
     }
 }
 /* Tablet - 768px */
