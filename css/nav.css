@@ -67,6 +67,9 @@
   body.cs-open {
     overflow: hidden;
   }
+  #cs-line[aria-hidden=true] {
+    display:none;
+  }
   #cs-navigation {
     width: 100%;
     /* prevents padding and border from affecting height and width */
