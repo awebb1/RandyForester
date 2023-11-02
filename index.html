@@ -1,320 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The official website for the Delaware based magician, Randy Forster">
-    <meta name="author" content="Alex Webb">
-    
-    <title>Randy Forster Magic</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The official website for the Delaware based magician, Randy Forster">
+        <meta name="author" content="Alex Webb">
+        
+        <title>Randy Forster Magic</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/dark.css">
-    <link rel="stylesheet" type="text/css" href="css/hero.css">
-    <link rel="stylesheet" type="text/css" href="css/testimonials.css">
-    <link rel="stylesheet" type="text/css" href="css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="preload" as="image" href="image0.webp'"> 
-</head>
-<!-- ============================================ -->
-<!--                 Navigation                   -->
-<!-- ============================================ -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/dark.css">
+        <link rel="stylesheet" type="text/css" href="css/hero.css">
+        <link rel="stylesheet" type="text/css" href="css/testimonials.css">
+        <link rel="stylesheet" type="text/css" href="css/gallery.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="preload" as="image" href="image0.webp'"> 
+    </head>
 
-<header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="#" class="cs-logo" aria-label="back to home">
-            <img src="img/randy.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+
+    <body>
+        <!-- ============================================ -->
+        <!--                 Navigation                   -->
+        <!-- ============================================ -->
+
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="#" class="cs-logo" aria-label="back to home">
+                    <img src="img/randy.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="#hero" class="cs-li-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#testimonials" class="cs-li-link">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#gallery" class="cs-li-link">
+                                    Gallery
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#footer" class="cs-li-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- <a href="" class="cs-button-solid cs-nav-button">Contact Us</a> -->
+                <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button>
+            </div>
+        </header>
+
+        <!-- ============================================ -->
+        <!--                   Hero                       -->
+        <!-- ============================================ -->
+
+        <section id="hero">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title"><span class="cs-color">Magic and Fun</span> For All Occasions</h2>
+                    <p class="cs-text">
+                        <a id="name">Randy Forster</a> is a magician with a passion for enchantment. Inspired by a mesmerizing card trick at the Yogi Magic Mart as a young man, he now finds himself mesmerizing others. As a member of Dickens Parlour Theatre in the Bethany Beach, Delaware area, Randy's dazzling performances have delighted guests on countless occasions. From his own shows to community events, private functions, and charity galas, Randy's charismatic style appeals to all ages. Experience the Comedy Magic of Randy Forster – a magician for every occasion.
+                    </p>
+                    <a href="#footer" class="cs-button-solid">Contact</a>
                 </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="#hero" class="cs-li-link">
-                            Home
-                        </a>
+                <div class="cs-stat-group">
+                    <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="img/image0-m.webp">
+                        <source media="(min-width: 601px)" srcset="img/image0.webp">
+                        <img decoding="async" src="img/image0.webp" alt="randy" width="842" height="737" aria-hidden="true">
+                    </picture>
+                    <!-- <div class="cs-stat-box">
+                        <span class="cs-stat">
+                            263
+                            <span class="cs-desc">Happy Families</span>
+                        </span>
+                    </div>
+                    <div class="cs-stat-box">
+                        <span class="cs-stat">
+                            5/5
+                            <span class="cs-desc">Google Rating</span>
+                        </span>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+                                    
+        <!-- ============================================ -->
+        <!--                  Reviews                     -->
+        <!-- ============================================ -->
+
+        <section id="testimonials">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Testimonials</span>
+                    <h2 class="cs-title">From The Awe-Struck Audience</h2>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Rick F.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                            Randy was a great entertainer. His magic was first class and when combined with his clever and funny dialogue, it was a very enjoyable show. We highly recommend that if you want to see a great show!
+                        </p>
                     </li>
-                    <li class="cs-li">
-                        <a href="#testimonials" class="cs-li-link">
-                            Testimonials
-                        </a>
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Barbara E.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                            If you want a fun evening filled with magic and comedy, make sure you see Randy Forster’s magic show. You will be amazed by the magic tricks and amused by the comedy!
+                        </p>
                     </li>
-                    <li class="cs-li">
-                        <a href="#gallery" class="cs-li-link">
-                            Gallery
-                        </a>
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Suzy M.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                            Randy spins a web of magic that keeps you spell bound and wondering "how did he do that?"
+                        </p>
                     </li>
-                    <li class="cs-li">
-                        <a href="#footer" class="cs-li-link">
-                            Contact
-                        </a>
+
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Tom S.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                            I’ve seen the show many times. Every time he introduces something new, fun and more magical!
+                        </p>
+                    </li>
+
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Dianne N.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                            Would recommend all to see his magic show. Guaranteed to have a good time!
+                        </p>
+                    </li>
+
+                    <li class="cs-item">
+                        <div class="cs-flex-group">
+                            <span class="cs-name">
+                                Kathy G.
+                            </span>
+                        </div>
+                        <p class="cs-review">
+                             Your show was awesome! Everyone had a fabulous time!
+                        </p>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <!-- <a href="" class="cs-button-solid cs-nav-button">Contact Us</a> -->
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-        </button>
-    </div>
-</header>
+        </section>
+                                    
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
 
-<body>
-    <!-- ============================================ -->
-    <!--                   Hero                       -->
-    <!-- ============================================ -->
-
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2 class="cs-title"><span class="cs-color">Magic and Fun</span> For All Occasions</h2>
-                <p class="cs-text">
-                    <a id="name">Randy Forster</a> is a magician with a passion for enchantment. Inspired by a mesmerizing card trick at the Yogi Magic Mart as a young man, he now finds himself mesmerizing others. As a member of Dickens Parlour Theatre in the Bethany Beach, Delaware area, Randy's dazzling performances have delighted guests on countless occasions. From his own shows to community events, private functions, and charity galas, Randy's charismatic style appeals to all ages. Experience the Comedy Magic of Randy Forster – a magician for every occasion.
-                </p>
-                <a href="#footer" class="cs-button-solid">Contact</a>
-            </div>
-            <div class="cs-stat-group">
-                <picture class="cs-background">
-                    <source media="(max-width: 600px)" srcset="img/image0-m.webp">
-                    <source media="(min-width: 601px)" srcset="img/image0.webp">
-                    <img decoding="async" src="img/image0.webp" alt="randy" width="842" height="737" aria-hidden="true">
-                </picture>
-                <!-- <div class="cs-stat-box">
-                    <span class="cs-stat">
-                        263
-                        <span class="cs-desc">Happy Families</span>
-                    </span>
+        <section id="gallery">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex">
+                        <span class="cs-topper">Gallery</span>
+                        <h2 class="cs-title">Miraculous Moments</h2>
+                    </div>
                 </div>
-                <div class="cs-stat-box">
-                    <span class="cs-stat">
-                        5/5
-                        <span class="cs-desc">Google Rating</span>
-                    </span>
-                </div> -->
-            </div>
-        </div>
-    </section>
-                                
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
-
-    <section id="testimonials">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">From The Awe-Struck Audience</h2>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Rick F.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                        Randy was a great entertainer. His magic was first class and when combined with his clever and funny dialogue, it was a very enjoyable show. We highly recommend that if you want to see a great show!
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Barbara E.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                        If you want a fun evening filled with magic and comedy, make sure you see Randy Forster’s magic show. You will be amazed by the magic tricks and amused by the comedy!
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Suzy M.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                        Randy spins a web of magic that keeps you spell bound and wondering "how did he do that?"
-                    </p>
-                </li>
-
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Tom S.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                        I’ve seen the show many times. Every time he introduces something new, fun and more magical!
-                    </p>
-                </li>
-
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Dianne N.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                        Would recommend all to see his magic show. Guaranteed to have a good time!
-                    </p>
-                </li>
-
-                <li class="cs-item">
-                    <div class="cs-flex-group">
-                        <span class="cs-name">
-                            Kathy G.
-                        </span>
-                    </div>
-                    <p class="cs-review">
-                         Your show was awesome! Everyone had a fabulous time!
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-                                
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">Gallery</span>
-                    <h2 class="cs-title">Miraculous Moments</h2>
+                <!--Gallery-->
+                <div class="cs-gallery">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic07.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic07.webp">
+                        <img loading="lazy" decoding="async" src="img/pic07.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic08.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic08.webp">
+                        <img loading="lazy" decoding="async" src="img/pic08.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic12-m.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic12.webp">
+                        <img loading="lazy" decoding="async" src="img/pic12.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic10.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic10.webp">
+                        <img loading="lazy" decoding="async" src="img/pic10.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic03-m.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic03.webp">
+                        <img loading="lazy" decoding="async" src="img/pic03.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 6-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic09.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic09.webp">
+                        <img loading="lazy" decoding="async" src="img/pic09.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 7-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic01-m.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic01.webp">
+                        <img loading="lazy" decoding="async" src="img/pic01.webp" alt="gallery" width="305" height="400">
+                    </picture>
+                    <!--Picture 8-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)" srcset="img/pic06-m.webp">
+                        <source media="(min-width: 601px)" srcset="img/pic06.webp">
+                        <img loading="lazy" decoding="async" src="img/pic06.webp" alt="gallery" width="305" height="400">
+                    </picture>
                 </div>
             </div>
-            <!--Gallery-->
-            <div class="cs-gallery">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic07.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic07.webp">
-                    <img loading="lazy" decoding="async" src="img/pic07.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic08.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic08.webp">
-                    <img loading="lazy" decoding="async" src="img/pic08.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic12-m.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic12.webp">
-                    <img loading="lazy" decoding="async" src="img/pic12.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic10.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic10.webp">
-                    <img loading="lazy" decoding="async" src="img/pic10.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic03-m.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic03.webp">
-                    <img loading="lazy" decoding="async" src="img/pic03.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic09.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic09.webp">
-                    <img loading="lazy" decoding="async" src="img/pic09.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic01-m.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic01.webp">
-                    <img loading="lazy" decoding="async" src="img/pic01.webp" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="img/pic06-m.webp">
-                    <source media="(min-width: 601px)" srcset="img/pic06.webp">
-                    <img loading="lazy" decoding="async" src="img/pic06.webp" alt="gallery" width="305" height="400">
-                </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="footer">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="#">
+                        <!-- Remove the light class if you don't need the dark logo -->
+                        <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="img/randy.svg" alt="logo" width="240" height="32">
+                    </a>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Sections</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#">Home</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="tel:703-628-5154">(703) 628-5154</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="mailto:grforster@gmail.com">grforster@gmail.com</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Website By:</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="mailto:alex.webbsites@gmail.com">Alex Webb</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Footer                     -->
-    <!-- ============================================ -->
-
-    <footer id="footer">
-        <div class="cs-container">
-            <!-- Logo Group -->
-            <div class="cs-logo-group">
-                <a aria-label="go back to home" class="cs-logo" href="#">
-                    <!-- Remove the light class if you don't need the dark logo -->
-                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="img/randy.svg" alt="logo" width="240" height="32">
-                </a>
+            <!-- Copyright -->
+            <div class="cs-bottom">
+                <span class="cs-copyright">&copy; 2023 Randy Forster - All Rights Reserved</span>
             </div>
-            <!-- Links -->
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <span class="cs-header">Sections</span>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="#">Home</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="#footer">Contact</a>
-                </li>
-            </ul>
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <span class="cs-header">Contact</span>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="tel:703-628-5154">(703) 628-5154</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="mailto:grforster@gmail.com">grforster@gmail.com</a>
-                </li>
-            </ul>
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <span class="cs-header">Website By:</span>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="mailto:alex.webbsites@gmail.com">Alex Webb</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Copyright -->
-        <div class="cs-bottom">
-            <span class="cs-copyright">&copy; 2023 Randy Forster - All Rights Reserved</span>
-        </div>
-    </footer>
-                                                  
-</body>
+        </footer>
+
+       <script src="js/nav.js"></script>
+        <script src="js/dark.js"></script>                                           
+    </body>
 
 
-
-<script src="js/nav.js"></script>
-<script src="js/dark.js"></script>
 
 </html>
