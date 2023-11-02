@@ -1,0 +1,176 @@
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #testimonials {
+        background-color: rgba(0, 0, 0, 0.05);
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
+    }
+    #testimonials .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 36.5rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #testimonials .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 56.25rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #testimonials .cs-title {
+        /* 20 characters including spaces */
+        max-width: 20ch;
+        margin: 0;
+    }
+    #testimonials .cs-card-group {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    #testimonials .cs-item {
+        list-style: none;
+        width: 100%;
+        /* 16px - 32px */
+        padding: clamp(1rem, 3.1vw, 2rem);
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        grid-column: span 12;
+        position: relative;
+    }
+    #testimonials .cs-item:last-of-type:after {
+        display: none;
+    }
+    #testimonials .cs-item:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        margin: 2rem 0 0 0;
+        background: #e8e8e8;
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    #testimonials .cs-flex-group {
+        width: 100%;
+        margin: 0 0 1.75rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    #testimonials .cs-profile {
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 2px solid #bababa;
+        background-color: #bababa;
+        border-radius: 50%;
+        /* clips image corners to make circle */
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+    #testimonials .cs-profile img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+    }
+    #testimonials .cs-name {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--primary);
+        display: block;
+    }
+    #testimonials .cs-job {
+        font-size: 0.875rem;
+        line-height: 1.2em;
+        font-weight: 400;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+    #testimonials .cs-review {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        max-width: 27.75rem;
+        color: var(--bodyTextColor);
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #testimonials .cs-container {
+        max-width: 80rem;
+    }
+    #testimonials .cs-card-group {
+        gap: 2.5rem;
+    }
+    #testimonials .cs-item {
+        grid-column: span 4;
+        position: relative;
+    }
+    #testimonials .cs-item:after {
+        width: 1px;
+        height: 80%;
+        margin: 0;
+        position: absolute;
+        right: -1.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #testimonials .cs-topper,
+    body.dark-mode #testimonials .cs-name {
+        color: var(--primaryLight);
+    }
+    body.dark-mode #testimonials .cs-title,
+    body.dark-mode #testimonials .cs-text,
+    body.dark-mode #testimonials .cs-review,
+    body.dark-mode #testimonials .cs-job,
+    body.dark-mode #testimonials .cs-desc {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #testimonials .cs-text,
+    body.dark-mode #testimonials .cs-desc,
+    body.dark-mode #testimonials .cs-review {
+        opacity: 0.8;
+    }
+    body.dark-mode #testimonials .cs-item:after {
+        opacity: 0.2;
+    }
+    body.dark-mode #testimonials {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+                                

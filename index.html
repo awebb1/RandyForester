@@ -1,268 +1,287 @@
-<!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Randy Forster Magic</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<style type="text/css">
-		.carousel-indicators li {
-		    border: none;
-		    background: #ccc;
-		}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The official website for the Delaware based magician, Randy Forster">
+    <meta name="author" content="Alex Webb">
+    
+    <title>Randy Forster Magic</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-		.carousel-indicators li.active {
-		    background: #28a745;
-		}
-	</style>
-	<body class="is-preload">
-		<!-- Wrapper-->
-			<div id="wrapper">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/dark.css">
+    <link rel="stylesheet" type="text/css" href="css/hero.css">
+    <link rel="stylesheet" type="text/css" href="css/testimonials.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="preload" as="image" href="image0.webp')}}"> 
+</head>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="#work" class="icon solid fa-image"><span>Images</span></a>
-						<a href="#testimonials" class="icon solid fa-comment"><span>Testimonials</span></a>
-						<!-- <a href="#" class="icon solid fa-home"><span>Home</span></a> -->
-					</nav>
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="#" class="cs-logo" aria-label="back to home">
+            <img src="img/randy.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="#hero" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#testimonials" class="cs-li-link">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#gallery" class="cs-li-link">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#footer" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <a href="" class="cs-button-solid cs-nav-button">Contact Us</a> -->
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
+    </div>
+</header>
 
-				<!-- Main -->
-					<div id="main">
+<body>
+    <!-- ============================================ -->
+    <!--                   Hero                       -->
+    <!-- ============================================ -->
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<img src="images/images.png" id="clipart" style="left: 10px; position: relative; max-width: 25%; height:auto;">
-									<h1 style='font-weight: 800;'>Randy Forster</h1>
-									<h3>Magician</h3>
-									<h3><b>Magic and Fun</b></h3>
-									<h3><b>For All Occasions</b></h3>
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title"><span class="cs-color">Magic and Fun</span> For All Occasions</h2>
+                <p class="cs-text">
+                    <a id="name">Randy Forster</a> is a magician with a passion for enchantment. Inspired by a mesmerizing card trick at the Yogi Magic Mart as a young man, he now finds himself mesmerizing others. As a member of Dickens Parlour Theatre in the Bethany Beach, Delaware area, Randy's dazzling performances have delighted guests on countless occasions. From his own shows to community events, private functions, and charity galas, Randy's charismatic style appeals to all ages. Experience the Comedy Magic of Randy Forster – a magician for every occasion.
+                </p>
+                <a href="#footer" class="cs-button-solid">Contact</a>
+            </div>
+            <div class="cs-stat-group">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="img/image0-m.webp">
+                    <source media="(min-width: 601px)" srcset="img/image0.webp">
+                    <img decoding="async" src="img/image0.webp" alt="randy" width="842" height="737" aria-hidden="true">
+                </picture>
+                <!-- <div class="cs-stat-box">
+                    <span class="cs-stat">
+                        263
+                        <span class="cs-desc">Happy Families</span>
+                    </span>
+                </div>
+                <div class="cs-stat-box">
+                    <span class="cs-stat">
+                        5/5
+                        <span class="cs-desc">Google Rating</span>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
 
-									<h4 style="margin-top: 2em;"><i class="solid fa-phone icon"></i>&nbsp; (703) 628-5154&nbsp; <i class="solid icon fa-envelope">&nbsp; grforster@gmail.com</i></h4>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/IMG_20221028_121254.jpg" alt="" />
-								</a>
-							</article>
+    <section id="testimonials">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">From The Awe-Struck Audience</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <span class="cs-name">
+                            Rick F.
+                        </span>
+                    </div>
+                    <p class="cs-review">
+                        Randy was a great entertainer. His magic was first class and when combined with his clever and funny dialogue, it was a very enjoyable show. We highly recommend that if you want to see a great show!
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <span class="cs-name">
+                            Barbara E.
+                        </span>
+                    </div>
+                    <p class="cs-review">
+                        If you want a fun evening filled with magic and comedy, make sure you see Randy Forster’s magic show. You will be amazed by the magic tricks and amused by the comedy!
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex-group">
+                        <span class="cs-name">
+                            Suzy M.
+                        </span>
+                    </div>
+                    <p class="cs-review">
+                        Randy spins a web of magic that keeps you spell bound and wondering "how did he do that?"
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Images</h2>
-								</header>
-								<p>
-									A gallery of captured magic!
-								</p>
-								<section>
-									<div class="row gallery">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic01.jpg" class="image fit thumbn"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic02.jpg" class="image fit thumbn"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic03.jpg" class="image fit thumbn"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic04.jpg" class="image fit thumbn"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic05.jpg" class="image fit thumbn"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic09.jpg" class="image fit thumbn"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic07.jpg" class="image fit thumbn"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic08.jpg" class="image fit thumbn"><img class="thumbn" src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic06.jpg" class="image fit thumbn"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic11.jpg" class="image fit thumbn"><img src="images/pic11.jpg" alt=""></a>
-										</div>						
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic12.jpg" class="image fit thumbn"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="images/pic10.jpg" class="image fit thumbn"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+    <section id="gallery">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Gallery</span>
+                    <h2 class="cs-title">Miraculous Moments</h2>
+                </div>
+            </div>
+            <!--Gallery-->
+            <div class="cs-gallery">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic07.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic07.webp">
+                    <img loading="lazy" decoding="async" src="img/pic07.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic08.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic08.webp">
+                    <img loading="lazy" decoding="async" src="img/pic08.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic12-m.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic12.webp">
+                    <img loading="lazy" decoding="async" src="img/pic12.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic10.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic10.webp">
+                    <img loading="lazy" decoding="async" src="img/pic10.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic03-m.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic03.webp">
+                    <img loading="lazy" decoding="async" src="img/pic03.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic09.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic09.webp">
+                    <img loading="lazy" decoding="async" src="img/pic09.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 7-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic01-m.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic01.webp">
+                    <img loading="lazy" decoding="async" src="img/pic01.webp" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 8-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="img/pic06-m.webp">
+                    <source media="(min-width: 601px)" srcset="img/pic06.webp">
+                    <img loading="lazy" decoding="async" src="img/pic06.webp" alt="gallery" width="305" height="400">
+                </picture>
+            </div>
+        </div>
+    </section>
+                                                  
+</body>
 
-							<!-- Testimonitals -->
-							<article id="testimonials" class="panel">
-								<header>
-									<h2>Testimonials</h2>
-								</header>
-								<p>
-									What the people have to say!
-								</p>
-								<section class="pb-5">
-								    <div class="container">
-								        <div class="row">
-								            <div class="mx-auto">
-								                <div class="p-5 bg-white shadow rounded">
-								                    <!-- Bootstrap carousel-->
-								                    <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-								                        <!-- Bootstrap carousel indicators [nav] -->
-								                        <ol class="carousel-indicators mb-0">
-								                            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-								                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-								                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-								                        </ol>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
 
+<footer id="footer">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="#">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="img/randy.svg" alt="logo" width="240" height="32">
+            </a>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sections</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#">Home</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#footer">Contact</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:703-628-5154">(703) 628-5154</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:grforster@gmail.com">grforster@gmail.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Website By:</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:alex.webbsites@gmail.com">Alex Webb</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Copyright -->
+    <div class="cs-bottom">
+        <span class="cs-copyright">&copy; <script>document.write(new Date().getFullYear())</script> Randy Forster - All Rights Reserved</span>
+    </div>
+</footer>
 
-								                        <!-- Bootstrap inner [slides]-->
-								                        <div class="carousel-inner px-5 pb-4">
-								                            <!-- Carousel slide-->
-								                            <div class="carousel-item active">
-								                                <div class="media">
-								                                    <div class="media-body ml-3">
-								                                        <blockquote class="blockquote border-0 p-0">
-								                                            <h1 class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Randy was a great entertainer. His magic was first class and when combined with his clever and funny dialogue, it was a very enjoyable show. We highly recommend that if you want to see a great show!</h1>
-								                                            <footer class="blockquote-footer">Rick F.
-								                                            </footer>
-								                                        </blockquote>
-								                                    </div>
-								                                </div>
-								                            </div>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/dark.js"></script>
 
-								                            <!-- Carousel slide-->
-								                            <div class="carousel-item">
-								                                <div class="media">
-								                                    <div class="media-body ml-3">
-								                                        <blockquote class="blockquote border-0 p-0">
-								                                            <h1 class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>If you want a fun evening filled with magic and comedy, make sure you see Randy Forster’s magic show. You will be amazed by the magic tricks and amused by the comedy!</h1>
-								                                            <footer class="blockquote-footer">Barbara E.
-								                                            </footer>
-								                                        </blockquote>
-								                                    </div>
-								                                </div>
-								                            </div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-								                            <!-- Carousel slide-->
-								                            <div class="carousel-item">
-								                                <div class="media">
-								                                    <div class="media-body ml-3">
-								                                        <blockquote class="blockquote border-0 p-0">
-								                                            <h1 class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Randy spins a web of magic that keeps you spell bound and wondering “how did he do that?</h1>
-								                                            <footer class="blockquote-footer">Suzy M.
-								                                            </footer>
-								                                        </blockquote>
-								                                    </div>
-								                                </div>
-								                            </div>
-
-								                            <div class="carousel-item">
-								                                <div class="media">
-								                                    <div class="media-body ml-3">
-								                                        <blockquote class="blockquote border-0 p-0">
-								                                            <h1 class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>I’ve seen the show many times. Every time he introduces something new, fun and more magical!</h1>
-								                                            <footer class="blockquote-footer">Tom S.
-								                                            </footer>
-								                                        </blockquote>
-								                                    </div>
-								                                </div>
-								                            </div>
-
-								                            <div class="carousel-item">
-								                                <div class="media">
-								                                    <div class="media-body ml-3">
-								                                        <blockquote class="blockquote border-0 p-0">
-								                                            <h1 class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Would recommend all to see his magic show. Guaranteed to have a good time!</h1>
-								                                            <footer class="blockquote-footer">Dianne N.
-								                                            </footer>
-								                                        </blockquote>
-								                                    </div>
-								                                </div>
-								                            </div>
-								                        </div>
-
-
-								                        <!-- Bootstrap controls [dots]-->
-								                        <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
-								                            <i class="fa fa-angle-left text-dark text-lg"></i>
-								                            <span class="sr-only">Previous</span>
-								                        </a>
-								                        <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
-								                            <i class="fa fa-angle-right text-dark text-lg"></i>
-								                            <span class="sr-only">Next</span>
-								                        </a>
-								                    </div>
-								                </div>
-								            </div>
-								        </div>
-								    </div>
-								</section>
-							</article>
-
-
-						<!-- Contact -->
-							<!-- <article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article> -->
-
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Copyright 2022, Randy Forster</li><li>Website By: <a>Alex Webb</a></li><li>Original Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
 </html>
