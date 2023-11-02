@@ -250,10 +250,14 @@
     }
 
     body.dark-mode #hero .cs-button-solid {
+        color: #000;
         background-color: var(--primaryLight);
     }
     body.dark-mode #hero .cs-logo {
         filter: grayscale(1) brightness(400%);
+    }
+    body.dark-mode #hero .cs-button-solid:before {
+        background: var(--bodyTextColorWhite);
     }
 }
 
